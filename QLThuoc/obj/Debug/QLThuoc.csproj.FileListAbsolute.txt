@@ -1,0 +1,10 @@
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\MainWindow.baml
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\MainWindow.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\UCT_WPF\UCT_DanhMuc.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\UCT_WPF\UCT_GioiThieu.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\UCT_WPF\UCT_HoaDon.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\UCT_WPF\UCT_ThongKe.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\WPF_Login.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\App.g.cs
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\QLThuoc_MarkupCompile.cache
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\QLThuoc\obj\Debug\QLThuoc_MarkupCompile.lref

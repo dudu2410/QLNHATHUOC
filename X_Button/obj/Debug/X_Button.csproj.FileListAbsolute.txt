@@ -1,0 +1,6 @@
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\bin\Debug\X_Button.dll
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\bin\Debug\X_Button.pdb
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\obj\Debug\X_Button.csprojResolveAssemblyReference.cache
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\obj\Debug\X_Button.csproj.CoreCompileInputs.cache
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\obj\Debug\X_Button.dll
+D:\QLThuoc\Source\QLThuoc_\QLThuoc\X_Button\obj\Debug\X_Button.pdb

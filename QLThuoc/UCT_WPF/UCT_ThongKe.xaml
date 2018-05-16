@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="QLThuoc.UCT_WPF.UCT_ThongKe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QLThuoc.UCT_WPF"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             mc:Ignorable="d" 
+             d:DesignHeight="510" d:DesignWidth="774">
+    <UserControl.Resources>
+        <Storyboard x:Key="HieuUngThongKe">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource HieuUngThongKe}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid >
+        <Image Source="/Assets/hihi.jpg" Stretch="Fill"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="button" Grid.Column="0" Grid.Row="0" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                Báo cáo danh mục
+            </Button>
+            <Button x:Name="button1" Grid.Column="1" Grid.Row="0" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                <StackPanel>
+                    <TextBlock Width="182">Báo cáo thống kê</TextBlock>
+                    <TextBlock Width="165">theo doanh thu</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="button2" Grid.Column="2" Grid.Row="0" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                Sản phẩm hết hạn
+            </Button>
+            <Button x:Name="button3" Grid.Column="0" Grid.Row="1" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                Tìm kiếm
+            </Button>
+            <Button x:Name="button4" Grid.Column="1" Grid.Row="1" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                <StackPanel>
+                    <TextBlock Width="182">Báo cáo thống kê</TextBlock>
+                    <TextBlock Width="165">theo loại thuốc</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="button5" Grid.Column="2" Grid.Row="1" Margin="10,49,10,38" FontSize="24" FontFamily="Nirmala UI Semilight" Style="{DynamicResource MaterialDesignRaisedButton}"  materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="Auto" FontWeight="Bold" FontStyle="Oblique">
+                Công nợ
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

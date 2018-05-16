@@ -1,0 +1,42 @@
+﻿<Window x:Class="QLThuoc.WPF_Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLThuoc"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="WPF_Login" Height="400" Width="538" WindowStyle="None" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="main" Background="Transparent" MouseDown="main_MouseDown">
+        <Grid >
+            <Image Source="/Assets/heading_back.png" Stretch="None" Margin="0,0,0,350" ></Image>
+        </Grid>
+        <Grid Background="Transparent" Margin="0,10,0,0"  >
+            <Image Grid.RowSpan="1" Source="/Assets/main_box.png" Stretch="UniformToFill" Margin="0,0,0,52" ></Image>
+        </Grid>
+        <Grid >
+            <Image Source="/Assets/heading.png" Stretch="None" Margin="0,0,0,312" ></Image>
+            <Image Source="/Assets/login_button.png" Stretch="None" Margin="-68,0,68,312" ></Image>
+            <TextBlock Margin="225,37,189,329" FontSize="24" FontWeight="Bold" FontFamily="Myriad Pro" Opacity="0.9" Foreground="#FF302E2E">Đăng Nhập</TextBlock>
+        </Grid>
+        <Button x:Name="ButtonClose" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Margin="485,25,23,345" Click="ButtonClose_Click" >
+            <materialDesign:PackIcon Kind="CloseBox" Width="30" Height="30" Foreground="#FF0B0B0C"/>
+        </Button>
+        <Image Source="/Assets/button.png" Width="123" Height="43" Margin="354,279,61,78" Cursor="Hand"/>
+        <Image Source="/Assets/ng_nh_p.png" Width="21" Height="15" Margin="405,293,112,92" Cursor="Hand"/>
+        <Grid>
+            <Image HorizontalAlignment="Center" Source="/Assets/shadow.png" Width="339" Height="18"  Margin="87,345,112,37"/>
+        </Grid>
+        <Image HorizontalAlignment="Center" Source="/Assets/shape.png" Width="414" Height="50" Stretch="Fill"  Margin="63,129,61,221"/>
+        <Image HorizontalAlignment="Center" Source="/Assets/shape.png" Width="414" Height="50" Stretch="Fill"  Margin="63,195,61,155"/>
+        <Image x:Name="Chk_Remmber" Cursor="Hand" HorizontalAlignment="Center"   Source="/Assets/remember.png" Width="19" Height="21" Stretch="None"  Margin="63,288,447,92" MouseEnter="Chk_Remmber_MouseEnter" MouseLeave="Chk_Remmber_MouseLeave" MouseDown="Chk_Remmber_MouseDown"  />
+        <TextBlock Margin="102,288,276,78" FontSize="24" FontWeight="Bold" FontFamily="Myriad Pro" Opacity="0.9" Foreground="#FF302E2E">Nhớ mật khẩu</TextBlock>
+        <materialDesign:PackIcon Kind="Key" Width="30" Height="30" VerticalAlignment="Center" Margin="76,206,0,164" Foreground="Black"/>
+        <materialDesign:PackIcon Kind="Account" Width="30" Height="30" VerticalAlignment="Center" Margin="76,138,0,232" Foreground="Black"/>
+        <PasswordBox x:Name="Txt_MatKhau" FontSize="20" materialDesign:HintAssist.Hint="Mật khẩu" Margin="116,204,83,164" KeyDown="Txt_MatKhau_KeyDown"  />
+        <TextBox  x:Name="Txt_TaiKhoan" FontSize="20" materialDesign:HintAssist.Hint="Tài khoản" Margin="111,126,83,231" KeyUp="Txt_TaiKhoan_KeyUp" />
+    </Grid>
+</Window>
